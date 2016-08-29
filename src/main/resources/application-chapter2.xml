@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="outputHelper" class="com.lhl.chapter2.OutputHelper">
+        <property name="iOutputGenerator" ref="cvsOutputGenerator"/>
+    </bean>
+    <bean id="cvsOutputGenerator" class="com.lhl.chapter2.CvsOutputGenerator"/>
+    <bean id="jsonOutputGenerator" class="com.lhl.chapter2.JsonOutputGenerator"/>
+</beans>
